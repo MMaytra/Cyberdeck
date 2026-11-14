@@ -69,7 +69,9 @@ The Raspberry Pi must be positioned inside the enclosure to:
 ### 2.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Raspberry Pi 4 -->
-<!-- ![Raspberry Pi 4](../images/hardware/raspberry-pi-4.jpg) -->
+<p align="center">
+  <img src="../images/raspberrypi_4.jpg" alt="Raspberry Pi 4" width="400">
+</p>
 
 **Documentation:**
 
@@ -114,7 +116,9 @@ The custom graphical interface is being designed specifically for the native res
 ### 3.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Elecrow touchscreen -->
-<!-- ![Elecrow Display](../images/hardware/elecrow-display.jpg) -->
+<p align="center">
+  <img src="../images/display.jpg" alt="Display" width="400">
+</p>
 
 ### 3.5 References
 
@@ -157,7 +161,9 @@ The dedicated USB receiver avoids the need to configure Bluetooth pairing.
 ### 4.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Rii K06 keyboard -->
-<!-- ![Rii K06](../images/hardware/rii-k06.jpg) -->
+<p align="center">
+  <img src="../images/keyboard.png" alt="Keyboard" width="400">
+</p>
 
 ### 4.5 References
 
@@ -241,8 +247,9 @@ Active cooling may be considered if passive cooling proves insufficient.
 ### 6.3 Component Image
 
 <!-- IMAGE PLACEHOLDER: Raspberry Pi with heatsinks -->
-<!-- ![Cooling System](../images/hardware/cooling.jpg) -->
-
+<p align="center">
+  <img src="../images/cooling_system.jpg" alt="Heatsinks" width="400">
+</p>
 ---
 
 ## 7. Enclosure & Mechanical Integration
@@ -270,7 +277,10 @@ Custom 3D-printed components are being designed to integrate the display and key
 ### 7.2 Enclosure Image
 
 <!-- IMAGE PLACEHOLDER: Forever Young bag -->
-<!-- ![Main Enclosure](../images/design/forever-young-bag.jpg) -->
+<p align="center">
+  <img src="../images/closed_forever_young_bag.jpg" alt="Forever young bag I" width="400">
+  <img src="../images/open_forever_young_bag.jpg" alt="Forever young bag II" width="400">
+</p>
 
 ### 7.3 3D-Printed Display Frame
 

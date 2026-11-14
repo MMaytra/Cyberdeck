@@ -22,7 +22,7 @@ The hardware is divided into the following subsystems:
 - **Cooling:** Thermal management of the Raspberry Pi.
 - **Enclosure:** Mechanical integration and protection.
 
-### System Architecture
+### 1.1 System Architecture
 
 A general hardware architecture diagram will be added as the design progresses.
 
@@ -33,7 +33,7 @@ A general hardware architecture diagram will be added as the design progresses.
 
 ## 2. Main Computing Platform
 
-### Raspberry Pi 4 Model B
+### 2.1 Raspberry Pi 4 Model B
 
 **Status:** Selected
 
@@ -41,7 +41,7 @@ The Raspberry Pi 4 Model B acts as the central processing unit of the Cyberdeck.
 
 It is responsible for running the operating system, executing applications, managing the graphical interface and communicating with external hardware.
 
-### Technical Specifications
+### 2.2 Technical Specifications
 
 | Parameter | Specification |
 |-----------|---------------|
@@ -56,7 +56,7 @@ It is responsible for running the operating system, executing applications, mana
 | Storage | MicroSD |
 | Power input | USB-C, 5.1 V / 3 A recommended |
 
-### Integration Considerations
+### 2.3 Integration Considerations
 
 The Raspberry Pi must be positioned inside the enclosure to:
 
@@ -66,19 +66,20 @@ The Raspberry Pi must be positioned inside the enclosure to:
 - Allow secure mechanical mounting.
 - Minimize the overall dimensions of the system.
 
-### Component Image
+### 2.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Raspberry Pi 4 -->
 <!-- ![Raspberry Pi 4](../images/hardware/raspberry-pi-4.jpg) -->
 
 **Documentation:**
+
 [Raspberry Pi Official Documentation](https://www.raspberrypi.com/documentation/)
 
 ---
 
 ## 3. Display
 
-### Elecrow 5-inch Touchscreen
+### 3.1 Elecrow 5-inch Touchscreen
 
 **Status:** Selected
 
@@ -86,7 +87,7 @@ The Cyberdeck uses a compact touchscreen as its primary display and graphical in
 
 The small screen size is one of the main constraints influencing the enclosure design and user interface.
 
-### Technical Specifications
+### 3.2 Technical Specifications
 
 | Parameter | Specification |
 |-----------|---------------|
@@ -98,7 +99,7 @@ The small screen size is one of the main constraints influencing the enclosure d
 | Touch interface | To be verified for exact model |
 | Power requirements | To be verified |
 
-### Integration Considerations
+### 3.3 Integration Considerations
 
 The display must be integrated into the enclosure while considering:
 
@@ -110,12 +111,12 @@ The display must be integrated into the enclosure while considering:
 
 The custom graphical interface is being designed specifically for the native resolution of **800 × 480 pixels**.
 
-### Component Image
+### 3.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Elecrow touchscreen -->
 <!-- ![Elecrow Display](../images/hardware/elecrow-display.jpg) -->
 
-### References
+### 3.5 References
 
 - Exact product link: TBD
 - Datasheet / installation instructions: TBD
@@ -124,7 +125,7 @@ The custom graphical interface is being designed specifically for the native res
 
 ## 4. Input Devices
 
-### Rii K06 Wireless Keyboard / Trackpad
+### 4.1 Rii K06 Wireless Keyboard / Trackpad
 
 **Status:** Selected
 
@@ -132,7 +133,7 @@ A Rii K06 wireless mini keyboard with integrated trackpad is used as the main ph
 
 The compact design provides both text input and pointer control without requiring a separate mouse.
 
-### Technical Specifications
+### 4.2 Technical Specifications
 
 | Parameter | Specification |
 |-----------|---------------|
@@ -142,7 +143,7 @@ The compact design provides both text input and pointer control without requirin
 | Connection | USB receiver |
 | Power | Internal rechargeable battery (verify exact variant) |
 
-### Integration Considerations
+### 4.3 Integration Considerations
 
 The input system must allow:
 
@@ -153,12 +154,12 @@ The input system must allow:
 
 The dedicated USB receiver avoids the need to configure Bluetooth pairing.
 
-### Component Image
+### 4.4 Component Image
 
 <!-- IMAGE PLACEHOLDER: Rii K06 keyboard -->
 <!-- ![Rii K06](../images/hardware/rii-k06.jpg) -->
 
-### References
+### 4.5 References
 
 - Product documentation: TBD
 
@@ -172,7 +173,7 @@ The Cyberdeck requires a portable power system capable of supplying the Raspberr
 
 The current design focuses on rechargeable lithium-based batteries combined with protection circuitry and regulated power conversion.
 
-### Initial Requirements
+### 5.1 Initial Requirements
 
 | Parameter | Requirement |
 |-----------|-------------|
@@ -189,7 +190,7 @@ The current design focuses on rechargeable lithium-based batteries combined with
 
 The final power requirements must account for the combined consumption of the Raspberry Pi, touchscreen and connected peripherals.
 
-### Current Design Concept
+### 5.2 Current Design Concept
 
 The preferred solution under consideration consists of:
 
@@ -200,7 +201,7 @@ The preferred solution under consideration consists of:
 
 The final configuration has not yet been selected or validated.
 
-### Component Images
+### 5.3 Component Images
 
 <!-- IMAGE PLACEHOLDER: Battery -->
 <!-- ![Battery](../images/hardware/battery.jpg) -->
@@ -208,7 +209,7 @@ The final configuration has not yet been selected or validated.
 <!-- IMAGE PLACEHOLDER: Power-management module -->
 <!-- ![Power Management](../images/hardware/power-module.jpg) -->
 
-### Technical Documentation
+### 5.4 Technical Documentation
 
 Detailed calculations, component comparisons, electrical diagrams and test results will be documented in:
 
@@ -218,7 +219,7 @@ Detailed calculations, component comparisons, electrical diagrams and test resul
 
 ## 6. Cooling
 
-### Raspberry Pi Heatsinks
+### 6.1 Raspberry Pi Heatsinks
 
 **Status:** Selected
 
@@ -226,7 +227,7 @@ Passive heatsinks have been selected as the initial thermal-management solution.
 
 Their purpose is to improve heat dissipation from the Raspberry Pi during operation.
 
-### Design Considerations
+### 6.2 Design Considerations
 
 - Available internal airflow.
 - Clearance between heatsinks and enclosure.
@@ -237,13 +238,12 @@ The final thermal configuration will be evaluated during system testing.
 
 Active cooling may be considered if passive cooling proves insufficient.
 
-### Component Image
+### 6.3 Component Image
 
 <!-- IMAGE PLACEHOLDER: Raspberry Pi with heatsinks -->
 <!-- ![Cooling System](../images/hardware/cooling.jpg) -->
 
 ---
-
 
 ## 7. Enclosure & Mechanical Integration
 
@@ -255,7 +255,7 @@ This approach reduces manufacturing complexity while providing a compact and por
 
 Custom 3D-printed components are being designed to integrate the display and keyboard into the existing enclosure.
 
-### Main Enclosure
+### 7.1 Main Enclosure
 
 | Parameter | Specification |
 |-----------|---------------|
@@ -267,12 +267,12 @@ Custom 3D-printed components are being designed to integrate the display and key
 | Material | TBD |
 | Mounting system | Under development |
 
-### Enclosure Image
+### 7.2 Enclosure Image
 
 <!-- IMAGE PLACEHOLDER: Forever Young bag -->
 <!-- ![Main Enclosure](../images/design/forever-young-bag.jpg) -->
 
-### 3D-Printed Display Frame
+### 7.3 3D-Printed Display Frame
 
 A custom frame is being designed to integrate the Elecrow 5-inch touchscreen into the enclosure.
 
@@ -284,12 +284,12 @@ The frame is intended to:
 - Allow suitable cable routing.
 - Facilitate installation and maintenance.
 
-#### Display Frame Design
+**Display Frame Design**
 
 <!-- IMAGE PLACEHOLDER: Display frame CAD render -->
 <!-- ![Display Frame](../images/design/display-frame.png) -->
 
-### 3D-Printed Keyboard Frame
+### 7.4 3D-Printed Keyboard Frame
 
 A second custom frame is being designed to integrate the Rii K06 keyboard and trackpad.
 
@@ -301,12 +301,53 @@ The frame is intended to:
 - Maintain access to the keyboard controls.
 - Allow easy installation and removal when necessary.
 
-#### Keyboard Frame Design
+**Keyboard Frame Design**
 
 <!-- IMAGE PLACEHOLDER: Keyboard frame CAD render -->
 <!-- ![Keyboard Frame](../images/design/keyboard-frame.png) -->
 
-### Mechanical Integration
+### 7.5 Hinge Mechanism
+
+**Status:** Under development
+
+The Cyberdeck features a clamshell configuration based on a modified Forever Young bag.
+
+A hinge mechanism is being considered to allow the upper and lower sections to open and close while maintaining structural stability and protecting the internal components.
+
+The hinge system must be compatible with the existing enclosure and the custom 3D-printed mounting frames.
+
+**Design Requirements**
+
+- Allow smooth and controlled opening and closing.
+- Provide sufficient stability when the Cyberdeck is open.
+- Support the weight of the display and its mounting frame.
+- Prevent excessive opening angles that could damage the assembly.
+- Protect internal wiring from bending, pinching or excessive tension.
+- Minimize the space occupied by the mechanism.
+- Allow integration with the existing enclosure.
+
+**Hinge Design**
+
+The final hinge configuration, mounting method and opening angle are still to be determined.
+
+Different solutions will be evaluated according to their mechanical complexity, available space and compatibility with the enclosure.
+
+<!-- IMAGE PLACEHOLDER: Hinge mechanism -->
+<!-- ![Hinge Mechanism](../images/design/hinge-mechanism.png) -->
+
+**Opening and Closing Mechanism**
+
+The opening and closing system must ensure that the display remains stable during operation and that the enclosure can be closed safely for transportation.
+
+Particular attention will be given to cable routing between the two sections and to preventing interference between the electronic components during movement.
+
+<!-- IMAGE PLACEHOLDER: Cyberdeck open -->
+<!-- ![Cyberdeck Open](../images/design/cyberdeck-open.jpg) -->
+
+<!-- IMAGE PLACEHOLDER: Cyberdeck closed -->
+<!-- ![Cyberdeck Closed](../images/design/cyberdeck-closed.jpg) -->
+
+### 7.6 Mechanical Integration
 
 The main mechanical challenge is adapting the electronic components to the available space and geometry of the existing bag.
 
@@ -320,7 +361,7 @@ Key design considerations include:
 - Protection of electronic components.
 - Adequate ventilation and heat dissipation.
 
-### Assembly
+### 7.7 Assembly
 
 <!-- IMAGE PLACEHOLDER: Mechanical assembly -->
 <!-- ![Mechanical Assembly](../images/progress/mechanical-assembly.jpg) -->
@@ -329,12 +370,13 @@ Further mechanical design details will be documented in:
 
 [System Design Documentation](system-design.md)
 
+---
 
 ## 8. Hardware Integration
 
 This section will document the physical and electrical integration of the different subsystems.
 
-### Planned Integration Tasks
+### 8.1 Planned Integration Tasks
 
 - Confirm display connections and power requirements.
 - Define power distribution between components.
@@ -344,7 +386,7 @@ This section will document the physical and electrical integration of the differ
 - Verify connector accessibility.
 - Evaluate electrical and thermal performance.
 
-### Integration Images
+### 8.2 Integration Images
 
 <!-- IMAGE PLACEHOLDER: Internal assembly -->
 <!-- ![Hardware Assembly](../images/progress/hardware-assembly.jpg) -->
@@ -364,7 +406,7 @@ This section will document the physical and electrical integration of the differ
 | Battery | Flat Li-ion / LiPo | Under consideration |
 | Power management | Protected battery + DC-DC regulation | Under development |
 | Cooling | Passive heatsinks | Selected |
-| Enclosure | Custom clamshell | Under development |
+| Enclosure | Forever Young bag + custom 3D-printed frames | Under development |
 
 Component status will be updated as the project progresses.
 
